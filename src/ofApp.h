@@ -2,12 +2,16 @@
 
 #include "ofMain.h"
 #include "lineDifference.hpp"
+#include "ofxFFmpegRecorder.h"
 
 class ofApp : public ofBaseApp{
 	public:
     
     lineDifference particles;
     ofFbo fbo;
+    ofxFFmpegRecorder recorder;
+    ofPixels pixels;
+    bool bRecording = false;
     
 		void setup();
 		void update();
