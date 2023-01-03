@@ -53,7 +53,6 @@ void lineDifference::draw(){
     ofBackground(0, 0, 0 );
     float m = ofGetWidth()/camera.getWidth();
     for(int y=0; y<camera.getHeight(); y+=10) {
-        ofPolyline polyline;
         for(int x=0; x<camera.getWidth(); x+=10) {
             ofColor gray = imageDifference.getPixels().getColor(x, y);
             int brightness = gray.getBrightness();

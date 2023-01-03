@@ -20,14 +20,14 @@ particleLine::particleLine(int x, int y, ofColor c) {
     dead = false;
     growing = true;
     force = glm::vec2(0, 0.02);
-    direction = glm::vec2(ofRandom(-2.0, 2.0), ofRandom(-2.0, 2.0));
+    direction = glm::vec2(ofRandom(-1.0, 1.0), ofRandom(-2.0, 2.0));
 }
 
 
 //--------------------------------------------------------------
 particleLine::particleLine(int x, int y, ofColor c, float s) {
     position = glm::vec2(x, y);
-    size = s;
+    size = s*2;
     growth = size/60*2;  // full size in 30 frames
     decay = size/60/5; //
     length = 1;
@@ -36,7 +36,7 @@ particleLine::particleLine(int x, int y, ofColor c, float s) {
     dead = false;
     growing = true;
     force = glm::vec2(0, 0.02);
-    direction = glm::vec2(ofRandom(-2.0, 2.0), ofRandom(-2.0, 2.0));
+    direction = glm::vec2(ofRandom(-1.0, 1.0), ofRandom(-2.0, 2.0));
 }
 
 
